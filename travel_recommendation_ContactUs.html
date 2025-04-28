@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Recommendations</title>
+        <style>
+            .hero {
+  height: 500px;
+  width: 1500px;
+  /*background-color: red;*/
+}
+
+.image-container {
+  width: 1200px;
+  height:800px;
+  background-image: url('./images/floridaBcgrn_fade.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  color: #037479;
+  opacity: 1; /* Ensures full opacity in Firefox */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 15px;
+  height: 50px;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*background-color: green;*/
+  padding: 0 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  /*background-color: #340bc6;*/
+  padding: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  color:  #037479
+}
+
+.search {
+  height:20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+
+
+.inputBox {
+border: none;
+  outline: none;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.buttonSet {
+ border-radius: 4px;
+ background-color: #037479;
+ color: #ffffff;
+}
+
+.search button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  /*background-color:blue;*/
+  display: flex;
+  height: 700px;
+}
+
+.social-sidebar {
+  /*background-color: red;*/
+  width: 30px;
+  padding-left:12px;
+  padding-top:89px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icons */
+}
+
+.social-sidebar img {
+  width: 25px;
+}
+
+.bodytext {
+  /*background-color: red;*/
+  width:1200px;
+  /*flex: 1; /* Occupies remaining space */
+  /*display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.text-block-left {
+  background-color: green;
+  width: 400px;
+  /*padding: 20px;*/
+  padding-top:90px;
+  padding-left:20px;
+  margin-right:220px;
+  margin-left:100px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.text-block-right {
+
+  /*background-color: green;*/
+    width: 400px;
+    padding: 20px;
+    color: white;
+  /*box-sizing: border-box;*/
+}
+
+.vertical-hr {
+    width: 2px;                   /* Thickness of the line */
+    height: 250px;                /* Length of the line */
+    background-color: #ffffff;      /* Color of the line */
+    border: none;                 /* Remove default border */
+  /*transform: rotate(90deg);     /* Rotate to make vertical */
+    margin-bottom:90px;
+}
+
+h3 {
+    color:white;
+    font-size:45px;
+    margin:0; 
+}
+
+h1 {
+    color:white;
+    font-size:15px;
+    margin: 0; 
+    width: 255px;
+}
+
+.rslt_srch_dv {
+    background-color:#ffffff; 
+    width:350px; 
+    height:360px; 
+    margin-bottom:10px; 
+    border-radius: 10px; 
+    border: 1px solid white;
+    overflow: hidden; 
+}
+
+.rslt_srch_spn {
+    display: block; 
+    text-align: justify; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    margin-bottom: 1em; 
+    color:black
+}
+
+</style>
+    </head>
+    <body style="display: flex; justify-content: center; /* Center horizontally */align-items: center;">
+      <div id="searchResult" style="position: absolute; top: 60px; right: 370px; height:200px; width:355px;"></div>
+      <section class="hero image-container ">
+            <header class="navbar">
+              <div class="logo">
+                <img src="./images/paper-plane_2377887.png" alt="Paper Plane Icon" width="40" />
+                <strong>TRAVELBLOOM</strong>
+              </div>
+              <nav class="nav-links">
+                <a href="travel_recommendation.html">Home</a>
+                <a href="travel_recommendation_AboutUs.html">About Us</a>
+                <a href="#" class="active">Contact Us</a>
+              </nav>
+              <div class="search">
+                <input id="inputSearchBx" class="seachBox inputBox" type="text" size="30" placeholder="Enter a Destination or keyword" />
+                <button id="searchBtn" class="buttonSet">Search</button>
+                <button id="clearBtn" class="buttonSet">Clear</button>
+              </div>
+            </header>
+            <div class="container">
+                <div class="social-sidebar">
+                <hr class="vertical-hr">
+                  <a href="#"><img src="./images/instagram_icon.png" alt="Instagram Icon" /></a>
+                  <a href="#"><img src="./images/facebook_icon.png" alt="Facebook Icon" /></a>
+                  <a href="#"><img src="./images/twitter.png" alt="Twitter Icon" /></a>
+                  <a href="#"><img src="./images/youtube.png" alt="YouTube Icon" /></a>
+                </div>
+                
+                <div class="bodytext">
+                  <div style="width:350px; margin-top:300px; float:left;"><!-- this is the first Div to the left-->
+                   <h3>CONTACT US</h3><br>
+                   <h1>Get in touch</h1><br><br>
+                 </div>
+                 
+               
+                 <div style="background-color: #00000050; padding: 20px; width: 500px; color:white; height: 400px; margin-top: 200px; margin-right: 40px; float: right; border-radius: 10px;">
+                  <label for="name">Name:</label><br><br>
+                  <input id="name" style="border-radius: 5px; color:white; background-color: transparent; height: 20px; width: 455px; border: 1px solid #959494;" type="text"><br><br>
+                
+                  <label for="email">Email:</label><br><br>
+                  <input id="email" style="border-radius: 5px; color:white; background-color: transparent; height: 20px; width: 455px; border: 1px solid #959494;" type="text"><br><br>
+                
+                  <label for="message">Message:</label><br><br>
+                  <textarea id="message" style="border-radius: 5px; color:white; background-color: transparent; border: 1px solid #959494;" rows="10" cols="60"></textarea><br><br>
+                
+                  <button id="searchBtn" style="width:465px; height:30px; border: none; " class="buttonSet">Submit</button>
+                </div>
+              </div>
+          </section>
+<script>
+
+const employees_out = [];
+fetch('./travel_recommendation_api.json')
+  .then(response => response.json())
+  .then(data => {
+  employees_out.push(data.employees);
+
+  })
+  .catch(error => {
+    console.error('Error fetching JSON:', error);
+  });
+
+
+  function locationResult(img, Loc, Descrp, link){
+    var outputDiv = document.getElementById("searchResult");
+    outputDiv.innerHTML += "<div class='rslt_srch_dv'><img src='./images/"+ img +"' width='350' alt='YouTube Icon' /><span class='rslt_srch_spn'><b>"+ Loc +"</b><p style='margin-top: 0.2em; margin-bottom: 0.2em; line-height: 1; color:#424141'>"+ Descrp +"</p><br><button class='buttonSet'>Visit</button></span></div>";
+  };
+        document.getElementById("searchBtn").addEventListener("click", function() {
+        document.getElementById("searchResult").innerHTML = "";
+        let empArray = employees_out[0];
+        let searchInfo= document.getElementById('inputSearchBx').value;
+        searchInfo = searchInfo.toLowerCase();
+        const matchingEmployees = empArray.filter(e => e.keyword .split(',') .map(k => k.trim().toLowerCase()) .includes(searchInfo.toLowerCase()));
+        matchingEmployees.forEach(employee => {
+            locationResult(employee.img, employee.Loc, employee.Descrp, employee.link);
+            });
+       });
+
+        document.getElementById("clearBtn").addEventListener("click", function() {
+            document.getElementById("searchResult").innerHTML = "";
+            document.getElementById('inputSearchBx').value ='';
+            });
+
+          </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "employees": [
+        {
+        "id": 1,
+        "Loc": "Hollywood, Florida",
+        "img": "hollywood.jpg",
+        "link":"https://www.visitflorida.com/listing/floridas-hollywood/30268/",
+        "Descrp": "Hollywood Beach, Florida, offers a charming coastal escape that blends classic Floridian charm with modern amenities",
+        "keyword": "beach, beaches, broadwalk, hollywood, usa, america"
+    },
+    {
+        "id": 2,
+        "Loc": "Ft.Lauderdale, Florida",
+        "img": "beach.jpg",
+        "link":"https://www.visitflorida.com/listing/floridas-hollywood/30268/",
+        "Descrp": "Fort Lauderdale Beach is a sun-soaked paradise on Florida’s southeastern coast, offering a perfect blend of relaxation and recreation for visitors of all ages",
+        "keyword": "beach, beaches, pond, ft.lauderdale, usa, america"
+    },
+    {
+        "id": 3,
+        "Loc": "Mylapore, Tamil Nadu, India",
+        "img": "temple.jpg",
+        "link":"https://www.visitflorida.com/listing/floridas-hollywood/30268/",
+        "Descrp": "Mylapore, nestled in the heart of Chennai, is a charming blend of tradition, spirituality, and cultural vibrancy",
+        "keyword": "temple, india"
+    }
+]
+}
